@@ -30,10 +30,24 @@ const bici = [  //Dichiarazione array per le bici
 //Dichiarazione per bici con peso piu basso
 let pesoMinore = null;
 
-// foreach per stampare tutte le bici con nome e peso
-bici.forEach((curBici) => {;
-    console.log(curBici.nome, curBici.peso);
-    // if statment per immettere il primo valore del peso dentro la variabile per il peso minore
+// // foreach per stampare tutte le bici con nome e peso
+// bici.forEach((curBici) => {;
+//     console.log(curBici.nome, curBici.peso);
+//     // if statment per immettere il primo valore del peso dentro la variabile per il peso minore
+//     if(pesoMinore == null){
+//         pesoMinore = curBici.peso;
+//     }
+//     //else if per capire se il primo valore è maggiore del peso della prossima bici iterata dal foreach, se cosi allora lo assegna alla variabile pesoMinore, tutto cio fino ala fine del ciclo
+//     else if(pesoMinore !== null && pesoMinore > curBici.peso){
+//         pesoMinore = curBici.peso;
+//     }
+// });
+
+bici.forEach((curBici) => {
+    const { nome, peso } = curBici;
+    console.log(`${nome}, ${peso}`);
+
+    //if statment per immettere il primo valore del peso dentro la variabile per il peso minore
     if(pesoMinore == null){
         pesoMinore = curBici.peso;
     }
@@ -44,4 +58,9 @@ bici.forEach((curBici) => {;
 });
 
 //Stampa finale della bici con peso minore
-console.log(pesoMinore);
+console.log("Il peso più basso è:", pesoMinore);
+
+
+
+
+
