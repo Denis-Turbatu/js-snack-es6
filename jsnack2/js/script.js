@@ -59,7 +59,7 @@ const squadreNuove = squadreCalcio.map(squadra => {
 });
 
 // stampo le squadre con template literal e destructuring
-squadreCalcio.forEach(curSquadraNuova => {
+squadreNuove.forEach(curSquadraNuova => {
     const {nome, falliSubiti} = curSquadraNuova;
     console.log(`${nome}, ${falliSubiti}`);
 });
