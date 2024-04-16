@@ -12,20 +12,19 @@ const persone = [
   {
     nome: "Maria",
     cognome: "Bianchi",
-    eta: 22
+    eta: 17
   }
 ];
 
 let message = "";
 
 persone.forEach((curPersone) => {
-    [nome, cognome, eta] = curPersone;
-    if (eta >= 18) {
-        message = "puo guidare";
+    if (curPersone.eta >= 18) {
+      message = "puo guidare";
     } else {
-        message = "non puo guidare";
+      message = "non puo guidare";
     }
-    const result = [nome, cognome, message];
+    const result = [curPersone.nome, curPersone.cognome, message];
     console.log(result);
 });
 
