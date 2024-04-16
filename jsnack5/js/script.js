@@ -20,9 +20,9 @@ let message = "";
 
 persone.forEach((curPersone) => {
     if (curPersone.eta >= 18) {
-      message = "puo guidare";
+        message = "puo guidare";
     } else {
-      message = "non puo guidare";
+        message = "non puo guidare";
     }
     const result = [curPersone.nome, curPersone.cognome, message];
     console.log(result);
