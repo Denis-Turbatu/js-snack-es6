@@ -11,6 +11,18 @@ const automobili = [
   { marca: "Opel", modello: "Corsa", alimentazione: "gpl" }
 ];
 
-arrayBenz
-arrayDies
-arrayIdrd
+let arrayBenz = [];
+let arrayDies = [];
+let arrayIdrd = [];
+
+arrayBenz = filtraArrayBenzina(automobili);
+
+// arrayBenz = automobili.filter((curArray) => {
+//   if (curArray.alimentazione === "benzina") {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// });
+
+console.log(arrayBenz);
